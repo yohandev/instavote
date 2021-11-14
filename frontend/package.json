@@ -1,0 +1,15 @@
+{
+  "name": "instavote-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node bundle.js"
+  },
+  "dependencies": {
+    "mithril": "^2.0.4"
+  },
+  "devDependencies": {
+    "esbuild": "^0.13.13"
+  }
+}
