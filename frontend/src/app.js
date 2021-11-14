@@ -26,7 +26,21 @@ const View = (
                 World!
             </section>
         </section>
-        <section class="child" style={{ backgroundColor: 'red' }}> Hi! </section>
+        <section class="child" style={{ backgroundColor: 'red' }}>
+        <section class="content" style={{backgroundColor: 'green'}}>
+                <video autoplay muted loop id='vid'>
+                    <source src="res/infra_bill.mp4" type="video/mp4"></source>
+                </video>
+                <section class="shadow" onclick={() => document.getElementById('vid').muted = false}>
+                    <br/>
+                    <h1>💰 $1.2 TRILLION BILL</h1>
+                    <h2>INFRASTRUCTURE</h2>
+                </section>
+            </section>
+            <section class="content" style={{backgroundColor: 'violet'}}>
+                World!
+            </section>
+        </section>
         <section class="child" style={{ backgroundColor: 'violet' }}> Hi! </section>
     </Border>
 )
