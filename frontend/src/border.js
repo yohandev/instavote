@@ -1,5 +1,7 @@
 import m from 'mithril'
 
+import { getLocation } from '../../backend/geolocation'
+
 // An iPhone X like border component
 export default class Border
 {
@@ -29,5 +31,9 @@ export default class Border
 
             backgroundColor: '#1f242b'
         }
+    }
+    oncreate(vnode)
+    {
+        getLocation()
     }
 }
