@@ -1,7 +1,7 @@
 const config =
 {
-    entryPoints: ['src/index.js'],
-    outfile: 'out/out.js',
+    entryPoints: ['src/app.js'],
+    outdir: 'www/js',
     bundle: true,
     minify: true,
 
@@ -12,5 +12,5 @@ const config =
 }
 
 require('esbuild')
-    .build(config)
-    .catch(() => process.exit(1))
+    .serve({ servedir: 'www' }, config)
+    .then(server => console.log(`Serving at http://${server.host}:${server.port}`))
