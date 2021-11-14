@@ -1,3 +1,9 @@
 import m from 'mithril'
 
-m.render(document.body, <p>Hello, World</p>)
+const IPhone = (
+    <div id='iphone-border'>
+        {/* <img src='../res/joe.png'></img> */}
+    </div>
+)
+
+m.render(document.body, IPhone)
