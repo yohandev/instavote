@@ -26,6 +26,8 @@ export default class Border
             overflow: 'scroll',
 
             fontSize: '0',
+
+            backgroundColor: '#1f242b'
         }
     }
 }
