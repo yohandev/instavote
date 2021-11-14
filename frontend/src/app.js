@@ -11,7 +11,16 @@ const View = (
                 Hey!
             </div> */}
             <section class="content" style={{backgroundColor: 'green'}}>
-                Hello!
+                <div>
+                <video autoplay muted loop id='vid'>
+                    <source src="res/cop26-480p.mp4" type="video/mp4"></source>
+                </video>
+                <section class="shadow" onclick={() => document.getElementById('vid').muted = false}>
+                    <br/>
+                    <h1>🌍 COP26 CONCLUDES</h1>
+                    <h2>CLIMATE CHANGE</h2>
+                </section>
+                </div>
             </section>
             <section class="content" style={{backgroundColor: 'violet'}}>
                 World!
