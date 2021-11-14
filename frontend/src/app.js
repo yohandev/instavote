@@ -1,6 +1,7 @@
 import m from 'mithril'
 
 import Border from './border'
+import Map from './map'
 
 const View = (
     <Border class="container">
@@ -38,7 +39,7 @@ const View = (
                 </section>
             </section>
             <section class="content" style={{backgroundColor: 'violet'}}>
-                World!
+                <Map/>
             </section>
         </section>
         <section class="child" style={{ backgroundColor: 'violet' }}> Hi! </section>
